@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+<title>谈张爱玲-夕萤</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+
+<link rel="stylesheet" href="/css/index.css">
+
+
+
+<meta name="keywords" content="书评,">
+<meta name="description" content="无">
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+<script src="/js/index.js"></script>
+
+
+<script src="/js/fancybox.umd.js"></script>
+
+
+<script src="/js/fancybox-images.js"></script>
+
+
+<script src="/js/gitalk.min.js"></script>
+
+
+<script src="/js/hljs.min.js"></script>
+ 
+<script>hljs.highlightAll();</script>
+
+	<meta name="generator" content="Hexo 7.0.0"></head>
+
+	<body>
+		
+	<div class="header">
+		<div class="header-top" id="header-top">
+			<div class="h-left">
+				<a href="/">
+					<img src="/image/favicon.ico" alt="Quiet">
+				</a>
+			</div>
+			<div class="h-right">
+				<ul>
+					
+						
+								<li>
+									<a href="/">
+										主页
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/archives">
+										文章
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/categories">
+										分类
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/tags">
+										标签
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/about">
+										我
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+				</ul>
+			</div>
+			<div class="h-right-close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<path fill="none" d="M0 0h24v24H0z" />
+					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+    <div class="topo">
+        <h2>夕萤</h2>
+    </div>
+    <ul>
+        
+        <li>
+            <a href="/">主页</a>
+        </li>
+        
+        <li>
+            <a href="/archives">文章</a>
+        </li>
+        
+        <li>
+            <a href="/categories">分类</a>
+        </li>
+        
+        <li>
+            <a href="/tags">标签</a>
+        </li>
+        
+        <li>
+            <a href="/about">我</a>
+        </li>
+        
+    </ul>
+    <div class="my_foot">
+        
+        <a target="_blank" rel="noopener" href="https://github.com/79E/hexo-theme-quiet">
+            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
+        </a>
+        
+    </div>
+</div>
+<div class='shelter'>
+</div>
+<style>
+    .shelter{
+        background-color: #333;
+        opacity:0.5;
+        cursor: pointer;
+        display: none; 
+        position: fixed;
+        left: 0;
+        top: 0; 
+        right: 0;
+        bottom: 0;
+        z-index: 1998;
+    }
+    .sidebar {
+        width: 66%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        background: #fff;
+        z-index: 1999;
+        text-align: center;
+        box-shadow: -6px 0 20px rgba(98, 94, 94, .815);
+    }
+
+    .topo {
+        width: 100%;
+        height: 200px;
+        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end
+    }
+
+    .topo h2 {
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        margin: 0 0 10px 10px;
+        font-size: 1.2em;
+        box-sizing: border-box
+    }
+
+    .topo:before {
+        content: '';
+        background-image: url(/image/pattern.png);
+        background-repeat: repeat;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1
+    }
+
+    .sidebar ul {
+        width: 100%;
+        margin-top: 50px
+    }
+
+    .sidebar ul li {
+        height: 50px;
+        list-style: none;
+        font-size: 1.2em;
+        text-align: right;
+        margin-right: 10px
+    }
+
+    .sidebar ul li a {
+        display: grid;
+        color: #5d606a;
+        text-overflow: ellipsis;
+        width: 100%;
+        text-decoration: none
+    }
+
+    .my_foot {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 0
+    }
+
+    .my_foot a {
+        text-decoration: none;
+        margin-right: 10px;
+        display: inline-block
+    }
+
+    .my_foot a img {
+        width: 30px;
+        height: 30px
+    }
+</style>
+
+<script>
+    $( function () {
+	$( '.h-right-close>svg' )
+		.click( function () {
+			$( '.sidebar' )
+				.animate( {
+					right: "0"
+				}, 500 );
+			$( '.shelter' )
+				.fadeIn( "slow" )
+		} );
+	$( '.shelter' )
+		.click( function ( e ) {
+			$( '.sidebar' )
+				.animate( {
+					right: "-100%"
+				}, 500 );
+			$( '.shelter' )
+				.fadeOut( "slow" )
+		} )
+} )
+
+</script>
+
+<div class="post">
+    <div class="post-header-background post-header-color"
+    style="background: url('')" 
+>
+    <div class="post-header-background-content">
+        <ul class="post-header-tag">
+            
+            
+            <li><a href="/tags/书评">书评</a></li>
+            
+            
+        </ul>
+        
+        <h1>谈张爱玲</h1>
+        <div class="post-header-info">
+            <div class="post-header-info-author">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <g>
+                            <path fill="#12183A"
+                                d="M6.187 15.265A6.47 6.47 0 0 0 10 16.5a6.47 6.47 0 0 0 3.813-1.235A4.99 4.99 0 0 0 10 13.5a4.99 4.99 0 0 0-3.813 1.765zM5.082 14.25A6.485 6.485 0 0 1 10 12c1.965 0 3.726.872 4.918 2.25a6.5 6.5 0 1 0-9.836 0zM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                            </path>
+                        </g>
+                    </svg>
+                
+                <span class="post-header-info-author-text"> <a target="_blank" rel="noopener" href="https://github.com/79E/hexo-theme-quiet">夕萤</a></span>
+                <div class="post-header-info-author-categories">
+                    
+                         <a href="../../categories/书评/" target="_blank" >书评</a>
+                    
+                </div>
+                <p>2023-11-26 00:00:00</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="post-content" id="content">
+  
+  <div id="article" class="post-content-info">
+    
+
+    <p>穿过愚园路的老洋房，途径张爱玲曾居住过的爱林登公寓，便来到了上海展览中心。八月，一年一度的上海书展如期开幕。展台琳琅满目，大陆和港台的书架，不约而同地将张爱玲的小说摆到了显眼的位置——两岸三地的年轻人，仍然狂热地痴迷着这位上世纪的女作家。其程度，似乎并不逊于一百年前的上海滩。</p>
+<p>1944年，初入文坛的张爱玲出版了她的第一部小说集《传奇》，蓝绿色的封面，就像“给报摊子上开一扇夜蓝的小窗户”。书籍出版后引发了文坛的轰动，仅过四天便旋即再版。再版的序言里，23岁的张爱玲难掩喜悦：“呵，出名要趁早呀！来得太晚的话，快乐也不那么痛快。”</p>
+<p>贵族出身（清末重臣李鸿章的重外孙女），年少成名，鸳蝴派前辈的举荐——任何一个标签单拎出来，都会引起不小的话题。何况这是个“被目为天才”的女作家。但却不能这样简单地定义张爱玲的作品。她写浮华时代中的痴男怨女，情节固然未脱离鸳鸯蝴蝶派才子佳人的爱怨嗔痴，但是，张爱玲却用其华丽而至浓稠的文字，揭开更深层次的人生苍凉的底子。</p>
+<p>试看《第一炉香》这段。彼时，贫窘的薇龙来到香港，刚结识声色场上奢靡的姑妈：</p>
+<blockquote>
+<p>薇龙沿着路往山下走，太阳已经偏了西，山背后大红大紫，金丝交错，热闹非凡，倒像雪茄烟盒盖上的商标画。满山的棕榈、芭蕉，都被毒日头烘焙得干黄松鬈，像雪茄烟丝。南方的日落是快的，黄昏只是一刹那，这边太阳还没有下去，那边，在山路的尽头，烟树迷离，青溶溶地，早有一撇月影儿。薇龙向东走，越走，那月亮越白，越晶亮，仿佛是一头肥胸脯的白凤凰，栖在路的转弯处，在树桠杈里做了窠。越走越觉得月亮就在前头树深处，走到了，月亮便没有了。薇龙站住了歇了一会儿脚，倒有点惘然。再回头看姑妈的家，依稀还见那黄地红边的窗棂，绿玻璃窗里映着海色。那巍巍的白房子，盖着绿色的琉璃瓦，很有点像古代的皇陵。</p>
+</blockquote>
+<p>文字错彩镂金，意象繁复，编织起重重叠叠的迷宫。读者流连在无数纷繁的色彩和比喻之中。大红大紫的夕阳，青溶溶的烟树，晶莹澈白的月亮，红窗棂，绿玻璃，琉璃瓦，白房子：颜色肆意地泼洒，编织成一副浓墨重彩的景象，读者也仿佛和薇龙一样，迈着恍恍惚惚的步子，行走在港城半山的别墅之间，迷离满眼——张爱玲对声光色的描写是从来不吝于纸墨的。而比喻更是新奇：商标和雪茄烟丝般的景色，繁华商业；枝丫交错里的月亮，是做窠的“肥胸脯的白凤凰”，华贵景象；比喻层层递进，愈来愈奇，高潮处，是姑妈的中式别墅，竟然像是“古代的皇陵”。少有这样的形容。此处却极为贴切：威严，腐落，富丽堂皇却又毫无生气，危险的诱惑。薇龙隐隐地感觉到威胁，却又忍不住沉迷其中。直至隐喻成谶，埋葬了她的青春。由是可见张爱玲张扬的文笔和绝妙的比喻。也无怪乎批评家会讥之于华靡了。</p>
+<p>张爱玲的文字是有魔力的，日常的寻常景象，在她笔下，幻化出各种各样奇妙的比喻，随处散落在小说里，大珠小珠，玉盘清脆，让读者一咏三叹，低徊流连。张之小说的阅读乐趣，一半出自于此。喜欢她的文章的读者，想必也会记得：七巧隔窗望着她爱了半生的男子，“晴天的风像一群白鸽子钻进他的纺绸褂里去…飘飘拍着翅子”；丹朱的美，“她那活泼的赤金色的脸和胳膊，在轻纱掩映中，像玻璃杯里滟滟的琥珀酒”；罗杰刚结婚时，“他的庞大的快乐…像夏天正午的蝉一般，无休无歇”；后来婚姻不愉快，却又无人倾诉时，“整个的世界像一个蛀空了的牙齿，麻木木的…只是风来的时候，隐隐的有一点酸痛”——文字精巧而雅致的美呵！单单读这些短短的段落，内心便能泛出泡沫般的丰富感受：因爱慕而生的男子的轻盈，年轻女子的灵动浮泛，庞大而喧嚣的快乐和怅然若有所失的惝惘。其他作家写文章，用比喻，往往只是一带而过，是言不及意时的说明，张爱玲却着意用奇，用妙，每一个比喻都经过精心的设计，仿佛在得意洋洋地夸耀着自己的才华。一则轶事，大陆的“张迷”们曾组织过一次张爱玲写作模仿大赛，欲寻找当代最具张爱玲风格的小说（书迷之爱，竟至如此！）。固然，情节可以参照，文笔可以训练，风格亦可临摹，但是唯其这番比喻，非得有灵性不可，是无论如何也模仿不出来的。</p>
+<p>这得益于张爱玲对生活天真的爱好和敏锐的观察。她不仅善于用精巧的比喻描述感官体验，还极其细心地留意生活的每一微小之处。自曹雪芹以来，很少有作家如此细致地描写闺阁的景象。房间布置，器具用物，一一列陈；男女主人公所著服饰，必定不厌其烦地详细描述其颜色、材质以及款式；社交场上的一颦一笑，一觞一咏，言语里婉转的小心思，无一逃过作者的慧眼。仅试举一例，《琉璃瓦》中，姚先生为给二女儿心心觅婿，在酒桌上，“把陈良栋的舅父敷衍得风雨不透，同时匀出一只眼睛来看住陈良栋，一只眼睛管住了心心，眼梢里又带住了她太太，唯恐姚太太没见过大阵仗，有失仪的地方。”把姚先生在社交场的手腕描写的水泄不通。而生活的一切无一不涉笔成趣。读过散文集《流言》的读者，难免不惊奇于张爱玲对生活敏锐而丰富的观察：她谈画，谈音乐，谈气味，谈服饰，谈公寓里闲碎的生活，甚至于花了很大的篇幅，描写厨房的食物：“茄子…油润的紫色；新绿的豌豆，熟艳的辣椒，金黄的面筋，像太阳里的肥皂泡。菠菜…每每有一两片碎叶子粘在篾篓底上，抖也抖不下来；迎着亮，翠生生的枝叶在竹片编成的方格子上招展着，使人联想到篱上的扁豆花。”….这点正体现了张爱玲作为女作家的天然的优势。少有男作家会对服装的样式、社交场上女人的心思以及厨房的食物，怀有这般浓厚而天真的好奇的。</p>
+<p>无疑，生活的爱好也启发了张爱玲的写作。《流言》不止一处谈及张爱玲爱看电影及传统的京戏。而她的文章中，也极注重光影的营造，有不少地方的描写颇似舞台的布景或电影的镜头。《金锁记》极出名的一段，爱慕长安的童世舫，第一次见到长安的母亲七巧：</p>
+<blockquote>
+<p>世舫回过头去，只见门口背着光立着一个小身材的老太太，脸看不清楚，穿一件青灰团龙宫织缎袍，双手捧着大红热水袋，身边夹峙着两个高大的女仆。门外日色昏黄，楼梯上铺着湖绿花格子漆布地衣，一级一级上去，通入没有光的所在。世舫直觉地感到那是个疯子——无缘无故的，他只是毛骨悚然，长白介绍道：“这就是家母。”</p>
+</blockquote>
+<p>日色昏黄的老屋子，楼梯尽头的光亮处，站着一位旧社会里裹小脚的老太太。这一幕，即使原封不动地搬到电影里，也丝毫不显违和。 张爱玲离开大陆后能单单靠写电影剧本为生，读者自然不必感到讶异了。</p>
+<p>尽管好用色彩，巧用比喻，善用舞台布景似的写作技巧，但张爱玲的作品，却始终是冷色调的。一种无边的压抑，笼罩着每篇小说。这种压抑，也许来源于古老威严的旧社会，也许来自于混乱无序的大时代，又也许是悲剧般宿命的人生。说不清楚，看不分明，总之是耽溺于这苦涩的矛盾里，无人可以逃脱。也正是张爱玲所说的“苍凉的底子”。不过，我更喜欢张爱玲的另一句话，“尴尬的不和谐”所产生的“郑重而轻微的骚动，认真而未有名目的斗争”。关于这一点，傅雷先生亦说的巧妙：“遗老遗少和小资产阶级，全部为男女问题这噩梦所苦，噩梦中是淫雨连绵的秋天，潮腻腻、灰暗、肮脏、窒息与腐烂的气味，像是病人临终的房间。烦恼、焦急、挣扎，全无结果。噩梦没有边际，也就无从逃脱。零星的折磨，生死的苦难，在此只是无名的浪费。青春、幻想、热情、希望，都没有生存的地方。川嫦的卧房，姚先生的家，封锁期间的电车车厢，扩大起来便是整个的社会，一切之上还有一只瞧不及的巨手张开着，不知从哪儿重重地压下来，要压瘪每个人的心房。这样一幅图案印在劣质的报纸上，纸条和对照模糊一点，就该和张女士的短篇差不多。”</p>
+<p>而身处其中的大部分人，也是不完整的。民国乱世之中，不少慷慨悲歌的作家，他们也写爱情，鲁迅写绢生和子君的清贫而悲剧的爱，曹禺写蘩漪与周萍压抑而禁忌的爱，巴金写觉慧和鸣凤大胆而无结果的爱，但是这些文章的主题是抗争，底色是进步，本质是批判。爱情是一种摆脱大家族、追求自由的象征，或是时代及个人悲剧的具象，因此是革命的，也是壮烈的。而张爱玲却将文字投射到世间万千普通人的喜怒哀乐之中，爱情于他们而言，不具有什么进步的象征，它只是生活无意识的一部分，甚至有时还是病态心理的扭曲映射。时代的洪流涌来，他们没有勇气抗争，甚至没有想过摆脱现有悲惨的生活，爱情是他们能够抓住的唯一的救命稻草。在这浮华万千、冷漠自私的世界里，藉由另外一个人，一个完整的个体，来救我，护我，理解我，温暖我，而他会是无条件地爱我的——多么美好的期许而又多么天真的想象！薇龙想借爱情逃离风尘，流苏想借婚姻远避旧家族，传庆借对丹朱的伤害弥补自己母爱的缺失。每个人都是不完整的，他们想借爱情弥补自身的缺失。这残缺越破碎，对爱情的渴望便越强烈。可是妄图在爱情中寻找爱情之外的东西，怎能不陷入失望的境地！只不过。除此之外，他们又能依托和期待什么呢？张爱玲说，“时代在影子似地沉没下去，人觉得自己是被抛弃了。为要证实自己的存在”，他们只是冀图“抓住一点真实的，最基本的东西”罢了。</p>
+<p>然而，他们在爱情中也是无力的，家族、物质、色欲、妯娌的闲话，任何一件事都足以毁掉他们最后的幻想。夏志清如此评价张爱玲的小说题材，“人的灵魂通常都是给虚荣心和欲望支撑着的，把支撑拿走以后，人变成了什么样子——这是张爱玲的题材。张爱玲说她不愿意遵照古典的悲剧原则来写小说，因为人在兽欲和习俗双重压力之下，不可能再像古典悲剧人物那样的有持续的崇高情感或热情的尽量发挥。契诃夫以后的短篇小说作家，大多认为悲剧只是一刹那间的事：悲剧人物暂时跳出自我的空壳子，看看自己不论是成功还是失败，都是空虚的。这种苍凉的意味，也就是张爱玲小说的特色。她的几篇讽刺性的短篇小说里，主角人物在如意的环境里忽然来了一点小不如意，他的希望忽然临时变成失望，这样他对于人生的悲剧，多少有了认识。”是啊，生活终究是平凡日子，玫瑰红的浪漫不会长久，大红大绿的庸俗也总是少数，偶尔闪念起抗争的愿望，也只是一霎热情的火光，顷刻便燃尽了。只剩冷寂的灰烬，孤零零地，昭示着自我的失败。出走的“娜拉”无疑是少数，大多数人并没有参与到那个时代神采飞扬的主题中去，张爱玲在《自己的文章》一文中如此辩白，“他们不是英雄，他们可是这时代的广大的负荷者。因为他们虽然不彻底，但究竟是认真的。他们没有悲壮，只有苍凉”，“极端病态与极端觉悟的人究竟不多。时代是这么沉重，不容那么容易就大彻大悟。这些年来，人类到底也这么生活了下来。”</p>
+<p>张选择上述的小说题材，和她的不幸的童年密不可分。父亲是沾惹恶习的清朝遗少，嫖妓，抽大烟，娶姨太太，变卖家产，勉力维持着没落家族的门楣；母亲则是那个年代新式的独立女性，饱读诗书，留洋归来，因无法忍受而离婚，独自在公寓生活。张爱玲幼时先是跟着父亲与后母生活，饱受冷眼；后来逃脱来到生活窘迫的母亲家中，尝得生活艰辛。在这样的成长环境中，她成为了一个冷静甚至略带些刻薄的观察者，用清冷的笔触，照见世间的男男女女。晚年有人拜访张爱玲，她曾偶然透露过她所写的大部分小说都有其生活中的原型。除情节外，文中那些妯娌闲话，男女约会时来来回回的试探性的对话，也不难看出作者对现实多有取材。（不应忘记，写这些作品时，张爱玲还只是个刚毕业而仍未恋爱的二十岁出头的“小丫头”。）</p>
+<p>当然，张爱玲的作品亦有不少缺点：主题暧昧而缺少深度，情节一味求奇，人物对话缺少真实性，文笔华丽而喧宾夺主，题材范围狭小，多有重复，等等。但瑕不掩瑜，张爱玲以其斐然的文笔和纯熟的文风，一面承继了中国自《金瓶梅》、《红楼梦》以来传统的白话小说技巧，一面延展了民国时期鸳鸯蝴蝶派才子佳人小说的题材范围，为读者营造了一个五光十色、迷离倘恍的“传奇”世界。</p>
+<p>书展结束，来到常德路的张爱玲故居前，牙白的大楼依旧，如今却已是私人宅邸，装有最新款式的电子门锁。张爱玲与那个时代终究还是远远地过去了。而楼前人来车往，时光不息川流。鼎玲玲玲玲，恍惚仿佛响起有轨电车的声音——一百年沧海桑田，多少人事变迁，多少的传奇故事。而上海仍是那个上海：年轻，繁华，欢笑，孤悬于古老大陆的肚脐，灯红酒绿，纸醉金迷。若说有什么不同，那么便是承平日久，这繁华更深，更广，更纵情，更无所顾忌，也更恣意任性。我想，这也正是张爱玲的读者依旧如此众多的原因。书中的爱情故事，仍然是未过时的。</p>
+<p>只是那个倾绝上海滩的才女，大概不复有了吧。</p>
+<p><em>参考文章：</em></p>
+<p><em>夏志清《中国现代小说史》（第十五章 张爱玲）</em></p>
+<p><em>傅雷《论张爱玲的小说》</em></p>
+<p><em>张爱玲《流言》（自己的文章）</em></p>
+<p><em>余斌《张爱玲传》</em></p>
+
+  </div>
+  <div id=""></div>
+</div>
+
+<script>
+  
+Fancybox.bind('[data-fancybox="fancybox-gallery-img"]', {
+  dragToClose: true,
+  Toolbar: true,
+  closeButton: "top",
+  Image: {
+    zoom: true,
+  },
+  on: {
+    initCarousel: (fancybox) => {
+      const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+    "Carousel.change": (fancybox, carousel, to, from) => {
+      const slide = carousel.slides[to];
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+  },
+});
+</script>
+
+<style>
+    #noneimg img {
+        display: none;
+        z-index: 9999;
+        /* width: 600px !important; */
+        min-width: 0%;
+        max-width: 90%;
+        max-height: 80%;
+        border-radius: 0px;
+        position: fixed;
+        box-shadow: 0 0 0px #c3c3c300 !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+    }
+
+    @media screen and (max-width:600px) {
+        #noneimg img {
+            max-width: 88%
+        }
+    }
+</style>
+
+    <div class="post-paging">
+    
+
+    
+    <a href="/2023/07/23/%E4%B8%8A%E6%B5%B7%E3%80%82%E8%89%B2%E5%9D%97%E3%80%82/">
+        <div class="post-paging-next">
+            <span>下一篇</span>
+            <p>上海。色块。</p>
+        </div>
+    </a>
+    
+</div>
+</div>
+		
+<div class="footer">
+	<div class="Copyright">
+		©2023 By 夕萤
+	</div>
+	<div class="contact">
+		
+		<a target="_blank" rel="noopener" href="https://github.com/79E/hexo-theme-quiet">
+			<img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="">
+		</a>
+		
+	</div>
+</div>
+
+<script src="/js/gotop.js"></script>
+
+
+<style type="text/css">
+    @media screen and (min-width: 600px) {
+        .goTop>span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            opacity: 0.8;
+            background: rgba(18, 24, 58, 0.06);
+            text-align: center;
+            transition: border .5s;
+            border: 1px solid rgba(18, 24, 58, 0.06);
+
+            -moz-transition: border .5s;
+            /* Firefox 4 */
+            -webkit-transition: border .5s;
+            /* Safari 和 Chrome */
+            -o-transition: border .5s;
+            /* Opera */
+        }
+
+        .goTop>span:hover {
+            border: 1px solid #6680B3;
+        }
+
+
+        .goTop {
+            position: fixed;
+            right: 30px;
+            bottom: 80px;
+        }
+
+        .goTop>span>svg {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
+        }
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .goTop {
+            display: none;
+        }
+    }
+</style>
+<div class="goTop" id="js-go_top">
+    <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g>
+                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
+            </g>
+        </svg>
+    </span>
+</div>
+<script>
+    $( '#js-go_top' )
+	.gotoTop( {
+		offset: 500,
+		speed: 300,
+		animationShow: {
+			'transform': 'translate(0,0)',
+			'transition': 'transform .5s ease-in-out'
+		},
+		animationHide: {
+			'transform': 'translate(100px,0)',
+			'transition': 'transform .5s ease-in-out'
+		}
+	} );
+</script>
+
+
+    <!-- Gitalk -->
+    <script>
+        const data = '{"clientID":"02b3c","clientSecret":"adfc7b4","repo":"gimment","owner":"duneng","admin":"duneng"}'
+        const gitalk = new Gitalk({
+            ...JSON.parse( data),
+            id:location.pathname,
+            distractionFreeMode:false
+        })
+        
+        if(Boolean('false')){
+            gitalk.render('gitalk-container')
+        }
+    </script>
+
+	</body>
+</html>
+
