@@ -10,7 +10,7 @@
 .header .header-top {
   display: flex;
   height: 100px;
-  background: rgba(124, 252, 0);
+  background: #B0E0E6;
   z-index: 99;
   padding: 0 calc((100% - 1160px)/2);
 }
@@ -54,7 +54,7 @@
   white-space: nowrap;
 }
 .header .header-top .h-right ul li a {
-  color: #008B8B;
+  color: #4682B4;
   text-decoration: none;
 }
 .header .header-top .h-right ul li a:hover {

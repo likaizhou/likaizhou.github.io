@@ -2,7 +2,7 @@
 <html>
 	<head>
 		
-<title>文章归档-夕萤</title>
+<title>标签-夕萤</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -39,8 +39,6 @@
 	<body>
 		
 
-    
-    
 	<div class="header">
 		<div class="header-top" id="header-top">
 			<div class="h-left">
@@ -61,13 +59,13 @@
 								
 									
 						
-							<li class="select">
-								<a href="/archives">
-									文章
-								</a>
-								<span class="dot"></span>
-							</li>
-							
+								<li>
+									<a href="/archives">
+										文章
+									</a>
+									<span class="dot"></span>
+								</li>
+								
 									
 						
 								<li>
@@ -79,13 +77,13 @@
 								
 									
 						
-								<li>
-									<a href="/tags">
-										标签
-									</a>
-									<span class="dot"></span>
-								</li>
-								
+							<li class="select">
+								<a href="/tags">
+									标签
+								</a>
+								<span class="dot"></span>
+							</li>
+							
 									
 						
 								<li>
@@ -265,54 +263,32 @@
 
 </script>
 
-    
 
-
-
-<div class="archive">
-    
-        <div class="header-body-background">
+<div class="tags">
+    <div class="header-body-background">
     <div class="header-body-background-content">
         <span>
             <img src="/image/logo.png" alt="Quiet">
         </span>
 
-        <h2>李某某是个很懒的人，他 1 年只写了 3 篇文章。</h2>
+        <h2>这里是一些展示的标签</h2>
     </div>
 </div>
-    
-    <div class="archive-content" id="content">
-        <div class="archive-content-data">
-            <div class="grouping">
-    
-        <p>
-            2023
-        </p>
-        
-        <a href="/2023/11/26/谈张爱玲/">
-            <span>谈张爱玲</span>
-            <time>11-26</time>
-        </a>
-        
-        <a href="/2023/07/23/上海。色块。/">
-            <span>上海。色块。</span>
-            <time>07-23</time>
-        </a>
-        
-        <a href="/2023/07/21/有意思的人/">
-            <span>有意思的人</span>
-            <time>07-21</time>
-        </a>
-        
-        
-</div>
+    <div class="tags-content" id="content">
+        <div class="tags-content-data">
+            <h2>2 Tags In Total</h2>
+            
+                <a href="/tags/%E4%B8%8A%E6%B5%B7/" class="tag-上海" value="上海">
+                    <span># 上海 <i>1</i> </span>
+                </a>
+            
+                <a href="/tags/%E4%B9%A6%E8%AF%84/" class="tag-书评" value="书评">
+                    <span># 书评 <i>1</i> </span>
+                </a>
+            
         </div>
-    </div>    
+    </div>
 </div>
-
-
-
-
 		
 <div class="footer">
 	<div class="Copyright">
@@ -414,7 +390,7 @@
             distractionFreeMode:false
         })
         
-        if(Boolean('')){
+        if(Boolean('true')){
             gitalk.render('gitalk-container')
         }
     </script>
